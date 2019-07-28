@@ -44,7 +44,7 @@ describe('Objects', function() {
     it('deletes `key` from a clone of object and returns the new object (it is non-destructive)', function() {
       var obj = { prop: 1 }
       var newObj = deleteFromObjectByKey(obj, 'prop')
-
+      console.log(newObj)
       expect(newObj['prop']).toBe(undefined)
     })
 
